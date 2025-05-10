@@ -1,0 +1,22 @@
+# Project Generated Files
+**/artifacts/
+artifacts/
+
+# Project Configuration files
+# EditorConfig is added by SKB.Core.EditorConfig
+.editorconfig
+**/.editorconfig
+# License is added by SKB.Core.LicenseConfig
+LICENSE.rst
+**/LICENSE.rst
+
+# Jetbrains Tools
+.idea
+
+[Bb]in/
+[Oo]bj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+
+[Oo]ut/

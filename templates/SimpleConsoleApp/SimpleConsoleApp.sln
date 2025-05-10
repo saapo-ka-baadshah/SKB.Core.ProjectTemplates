@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleConsoleApp.Console", "src\SimpleConsoleApp.Console\SimpleConsoleApp.Console.csproj", "{97642635-10A3-448D-9A74-885ABEB5DC95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{A43F7C93-7CC6-4FF0-9975-D64023B1FC0D}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		Directory.Packages.props = Directory.Packages.props
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97642635-10A3-448D-9A74-885ABEB5DC95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97642635-10A3-448D-9A74-885ABEB5DC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97642635-10A3-448D-9A74-885ABEB5DC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97642635-10A3-448D-9A74-885ABEB5DC95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

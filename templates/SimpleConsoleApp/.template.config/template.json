@@ -1,0 +1,88 @@
+﻿{
+	"author": "saapo-ka-baadshah",
+	"classifications": ["Console", "System"],
+	"identity": "SKB.Core.ProjectTemplates.SimpleConsoleApp",
+	"name": "SKB Simple Console App Project Template",
+	"description": "A simple project scaffolding for a Console Application with Managed Dependencies",
+	"shortName": "skb-simple-console-app",
+	"sourceName": "SimpleConsoleApp",
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	},
+	"preferNameDirectory": true,
+	"sources": [
+		{
+			"exclude": [
+				"**/[Bb]in/**",
+				"**/[Oo]bj/**",
+				".template.config/**/*",
+				"**/*.lock.json",
+				"**/logs/**",
+				"**/.idea/**",
+				"**/artifacts/**"
+			],
+			"modifiers": [
+				{
+					"condition": "(!DevAppSettingsInclude)",
+					"exclude": [
+						"**/*.development.json",
+						"**/*.dev.*/**"
+					]
+				}
+			]
+		}
+	],
+	"symbols": {
+		"DevAppSettingsInclude": {
+			"type": "parameter",
+			"datatype": "bool",
+			"description": "Does the Application Template Start With a Dev Environment",
+			"defaultValue": false
+		},
+		"originalAuthor": {
+			"type": "generated",
+			"generator": "constant",
+			"parameters": {
+				"value": "saapo-ka-baadshah"
+			},
+			"replaces": "{OriginalAuthor}"
+		},
+		"authors": {
+			"type": "parameter",
+			"datatype": "text",
+			"description": "A semiloclon separated list of Authors",
+			"isRequired": true,
+			"replaces": "{Authors}",
+			"defaultValue": ""
+		},
+		"title": {
+			"type": "derived",
+			"valueSource": "name",
+			"valueTransform": "ConvertToTitle",
+			"replaces": "{Title}"
+		}
+	},
+	"forms": {
+		"ConvertToTitleCase": {
+			"identifier": "snakeCase"
+		},
+		"RemoveWhiteSpaces": {
+			"identifier": "replace",
+			"pattern": "\\s+\n",
+			"replacement": ""
+		},
+		"AddCasingSpaces": {
+			"identifier": "replace",
+			"pattern": "([a-z])([A-Z])",
+			"replacement": "$1 $2"
+		},
+		"ConvertToTitle": {
+			"identifier": "chain",
+			"steps": [
+				"ConvertToTitleCase",
+				"AddCasingSpaces"
+			]
+		}
+	}
+}
