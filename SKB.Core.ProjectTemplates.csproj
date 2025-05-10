@@ -3,7 +3,6 @@
         <!-- The package metadata. Fill in the properties marked as TODO below -->
         <!-- Follow the instructions on https://learn.microsoft.com/nuget/create-packages/package-authoring-best-practices -->
         <PackageId>SKB.Core.ProjectTemplates</PackageId>
-        <PackageVersion>1.0</PackageVersion>
         <Title>Clean Project Templates</Title>
         <Authors>saapo-ka-baadshah</Authors>
         <Description>Templates to use when creating an application for myself, community and personal projects</Description>
