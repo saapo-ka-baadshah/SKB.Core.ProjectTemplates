@@ -1,0 +1,27 @@
+{
+  "author": "saapo-ka-baadshah",
+  "classifications": ["Solution", "System"],
+  "identity": "SKB.Core.ProjectTemplates.CleanSolution",
+  "name": "SKB Simple Clean solution",
+  "description": "A simple project scaffolding for a clean solution with Managed Dependencies",
+  "shortName": "skb-clean-solution",
+  "sourceName": "CleanSolution",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "exclude": [
+        "**/[Bb]in/**",
+        "**/[Oo]bj/**",
+        ".template.config/**/*",
+        "**/*.lock.json",
+        "**/logs/**",
+        "**/.idea/**",
+        "**/artifacts/**"
+      ]
+    }
+  ]
+}
