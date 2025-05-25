@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-namespace SKB.App.SimpleConsoleApp.Console.Extenions;
+namespace SKB.App.SimpleConsoleApp.Console.Extensions;
 
 /// <summary>
 /// Extends the Builder Extensions for Configuration
