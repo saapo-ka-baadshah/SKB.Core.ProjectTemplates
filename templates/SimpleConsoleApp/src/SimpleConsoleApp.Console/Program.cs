@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 using Microsoft.Extensions.Hosting;
-using SKB.App.SimpleConsoleApp.Console.Extenions;
+using SKB.App.SimpleConsoleApp.Console.Extensions;
 
 namespace SKB.App.SimpleConsoleApp.Console;
 
